@@ -1,11 +1,13 @@
-<div class="products card-group">
-  {{#each products}}
-    <div class="card">
-      <img class="card-img-top" src="{{this.image}}" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">{{this.name}}</h5>
-        <p class="card-text">{{this.description}}</p>
+<div class="row">
+  <div class="col-sm-6">
+    {{#each products}}
+      <div class="card">
+        <img class="card-img-top" src="{{this.image}}" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">{{this.name}}</h5>
+          <p class="card-text">{{this.description}}</p>
+        </div>
       </div>
-    </div>
-  {{/each}}
+    {{/each}}
+ </div>  
 </div>
