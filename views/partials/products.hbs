@@ -1,11 +1,11 @@
-<div class="card-deck">
-  <div class="card">
-    {{#each products}}
+<div class="products card-deck">
+  {{#each products}}
+    <div class="row card">
       <img class="card-img-top" src="{this.image}}" alt="Card image cap">
       <div class="card-body">
         <h5 class="card-title">{{this.title}}</h5>
         <p class="card-text">{{this.description}}</p>
       </div>
-    {{/each}}
-  </div>
+    </div>
+  {{/each}}
 </div>
