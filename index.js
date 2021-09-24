@@ -9,8 +9,8 @@ app.set('view engine', 'hbs');
 //Sets handlebars configurations
 app.engine('hbs', handlebars({
 layoutsDir: __dirname + '/views/layouts',
-//new configuration parameter
-extname: 'hbs'
+extname: 'hbs',
+partialsDir: __dirname + '/views/partials/'
 }));
 
 app.use(express.static('public'))
