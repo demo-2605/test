@@ -1,9 +1,7 @@
-<div>
-  <div>
-    <div class="container flex flex-wrap mx-auto ml-4 mr-6 mt-8">
-        {{#each categories}}
-          <a class={{this}} href="/categories/{{this}}" > {{this}}</a>
-        {{/each}}
-    </div>
-  </div>
-</div>
+<ul class="nav nav-pills">
+  {{#each categories}}
+    <li class="nav-item">
+      <a class="nav-link" aria-current="page" href="/categories/{{this}}">{{this}}</a>
+    </li>
+  {/each}}
+</ul>
