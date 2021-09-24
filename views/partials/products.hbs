@@ -1,0 +1,17 @@
+<div class="products">
+    <div class="row justify-content-center">
+        {{#each products}}
+        <div class="col-lg-7" style="margin-top: 50px;">
+            <div class="card">
+                <img src="{{this.image}}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Posted by {{this.title}}</h5>
+                    <p>
+                    {{this.description}}
+                    </p>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>
