@@ -1,17 +1,13 @@
-<div class="products">
-    <div class="m-6 grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-4 mt-8">
-        {{#each products}}
-        <div class="col-lg-7" style="margin-top: 50px;">
-            <div class="card">
-                <img src="{{this.image}}" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Posted by {{this.title}}</h5>
-                    <p>
-                    {{this.description}}
-                    </p>
-                </div>
-            </div>
+<div>
+  <div class="m-6 grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-4 mt-8">
+    {{#each products}}
+        <div class="rounded-t-lg bg-white pt-2 pb-2">
+            <img class="crop mx-auto" src="{{this.image}}" class="card-img-top" alt="...">
         </div>
-        {{/each}}
-    </div>
+        <div class="pl-4 pr-4 pb-4 pt-4 rounded-lg">
+          <h4 class="mt-1 font-semibold text-base leading-tight truncate text-gray-700">{{this.title}} </h4>
+          <div class="mt-1 text-sm text-gray-700">{{this.description}}</div>
+        </div>
+    {{/each}}
+  </div>
 </div>
