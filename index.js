@@ -40,8 +40,11 @@ fakeApi = () => {
     }
   ];
 }
+
+categories = ['jazz', 'soul', 'French variety']
+
 app.get('/', (req, res) => {
-res.render('main', {layout: 'index', suggestedChamps: fakeApi(), listExists: true, categories: ['jazz', 'soul']});
+res.render('main', {layout: 'index', suggestedChamps: fakeApi(), listExists: true, categories: categories});
 });
 
 app.listen(port, () => console.log(`App listening to port ${port}`));
